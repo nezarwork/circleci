@@ -10,10 +10,10 @@ jobs:
        - checkout
        - run: yum install wget composer -y
        - run: composer install --no-plugins --no-scripts 
-       - run: echo "Running the tests"
-       - run: wget https://phar.phpunit.de/phpunit-6.2.phar
-       - run: chmod +x phpunit-6.2.phar
-       - run: mv phpunit-6.2.phar /usr/bin/phpunit
+       # - run: echo "Running the tests"
+       # - run: wget https://phar.phpunit.de/phpunit-6.2.phar
+       # - run: chmod +x phpunit-6.2.phar
+       # - run: mv phpunit-6.2.phar /usr/bin/phpunit
        # - run: php /usr/bin/phpunit
        # - run: php vendor/phpunit/phpunit/phpunit
        - run: yum install phpunit -y
