@@ -6,5 +6,6 @@ jobs:
      steps:
        - checkout
        - run: yum install composer -y
+       - run: composer install 
        - run: echo "Running the tests"
        - run: phpunit
