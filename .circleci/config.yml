@@ -15,4 +15,4 @@ jobs:
        # - run: chmod +x phpunit-6.2.phar
        # - run: mv phpunit-6.2.phar /usr/local/bin/phpunit
        # - run: phpunit
-       - run: whereis php
+       - run: php -v
