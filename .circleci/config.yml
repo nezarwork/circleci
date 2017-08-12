@@ -5,6 +5,6 @@ jobs:
       - image: nezarfadle/laravel-php70
      steps:
        - checkout
-       - run: yum install composer
+       - run: yum install composer -y
        - run: echo "Running the tests"
        - run: phpunit
