@@ -22,6 +22,6 @@ machine:
   php:
     version: 7.0.4
 
-test:
+build:
   override:
     - php --version
