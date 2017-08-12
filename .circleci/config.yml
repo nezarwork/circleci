@@ -1,13 +1,13 @@
-version: 2
-jobs:
-   build:
+# version: 2
+# jobs:
+#    build:
      # docker:
      #  - image: nezarfadle/laravel-php70
-     machine: 
-        php:
-          version: 7.0.0
-     steps:
-       - checkout
+     # machine: 
+     #    php:
+     #      version: 7.0.0
+     # steps:
+     #   - checkout
        # - run: yum install wget composer -y
        # - run: composer install --no-plugins --no-scripts 
        # - run: echo "Running the tests"
@@ -15,4 +15,10 @@ jobs:
        # - run: chmod +x phpunit-6.2.phar
        # - run: mv phpunit-6.2.phar /usr/local/bin/phpunit
        # - run: phpunit
-       - run: php -v
+       # - run: php -v
+machine:
+  php:
+    version: 7.0.4
+  steps:
+    - checkout
+    - run: php -v
