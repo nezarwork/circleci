@@ -1,11 +1,11 @@
 version: 2
 jobs:
    build:
-     docker:
-      - image: nezarfadle/laravel-php70
-     # machine: 
-     #    php:
-     #      version: 7.0.0
+     # docker:
+     #  - image: nezarfadle/laravel-php70
+     machine: 
+        php:
+          version: 7.0.0
      steps:
        - checkout
        - run: yum install wget composer -y
