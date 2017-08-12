@@ -8,4 +8,7 @@ jobs:
        - run: yum install composer -y
        - run: composer install --no-plugins --no-scripts 
        - run: echo "Running the tests"
+       - run: wget https://phar.phpunit.de/phpunit-6.2.phar
+       - run: chmod +x phpunit-6.2.phar
+       - run: mv phpunit-6.2.phar /usr/local/bin/phpunit
        - run: phpunit
