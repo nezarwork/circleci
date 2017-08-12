@@ -19,4 +19,5 @@ jobs:
        - run: yum install phpunit -y
        - run: php -v
        - run: whereis php
+       - run: php phpunit
        # - run: php /usr/bin/phpunit
