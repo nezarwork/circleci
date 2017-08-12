@@ -13,12 +13,13 @@ jobs:
        - run: php composer-setup.php
        - run: php -r "unlink('composer-setup.php');"
        - run: mv composer.phar /usr/bin/composer
-       - run: yum install wget composer -y
+       # - run: yum install wget composer -y
+       - run: yum install wget -y
        - run: composer install --no-plugins --no-scripts 
        # - run: echo "Running the tests"
        - run: wget https://phar.phpunit.de/phpunit-6.2.phar
-       - run: chmod +x phpunit-6.2.4.phar
-       - run: mv phpunit-6.2.4.phar /usr/bin/phpunit
+       - run: chmod +x phpunit-6.2.phar
+       - run: mv phpunit-6.2.phar /usr/bin/phpunit
        # - run: php /usr/bin/phpunit
        # - run: php vendor/phpunit/phpunit/phpunit
        # - run: yum install phpunit -y
