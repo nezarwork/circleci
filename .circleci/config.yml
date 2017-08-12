@@ -19,6 +19,8 @@
 machine:
   php:
     version: 7.0.4
+    
+build:  
   steps:
     - checkout
     - run: php -v
