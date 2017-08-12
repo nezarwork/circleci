@@ -20,12 +20,11 @@ jobs:
        # - run: mv phpunit-6.2.phar /usr/bin/phpunit
 
        # - run: php /usr/bin/phpunit
-       # - run: php vendor/phpunit/phpunit/phpunit
        # - run: yum install phpunit -y
 
        - run: php -v
        - run: whereis php
        - run: ls vendor/phpunit/phpunit/
-       - run: ls
+       - run: php vendor/phpunit/phpunit/phpunit
        # - run: php phpunit
        # - run: php /usr/bin/phpunit
