@@ -14,6 +14,6 @@ jobs:
        - run: wget https://phar.phpunit.de/phpunit-6.2.phar
        - run: chmod +x phpunit-6.2.phar
        - run: mv phpunit-6.2.phar /usr/bin/phpunit
-       - run: php phpunit
+       - run: php /usr/bin/phpuni
        # - run: php vendor/phpunit/phpunit/phpunit
        # - run: php -v
