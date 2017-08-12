@@ -15,5 +15,5 @@ jobs:
        - run: chmod +x phpunit-6.2.phar
        - run: mv phpunit-6.2.phar /usr/local/bin/phpunit
        # - run: php phpunit
-       - run: php vendor/phpunit/phpunit/phpunit
-       # - run: php -v
+       # - run: php vendor/phpunit/phpunit/phpunit
+       - run: php -v
