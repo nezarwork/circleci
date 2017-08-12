@@ -13,7 +13,7 @@ jobs:
        - run: php composer-setup.php
        - run: php -r "unlink('composer-setup.php');"
        - run: mv composer.phar /usr/bin/composer
-       # - run: yum install wget composer -y
+       - run: yum install wget composer -y
        - run: composer install --no-plugins --no-scripts 
        # - run: echo "Running the tests"
        - run: wget https://phar.phpunit.de/phpunit-6.2.phar
