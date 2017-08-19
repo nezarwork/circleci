@@ -17,5 +17,5 @@ Route::get('/', function () {
 
 
 Route::get('api', function(){
-	return "API V1.0";
+	return "API V1.1";
 });
